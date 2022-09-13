@@ -3,6 +3,9 @@ import express from "express";
 const app = express();
 const port = 9384;
 
+app.use(cors());
+app.use(express.json());
+
 const employees = [
   {
     firstname: "John",
