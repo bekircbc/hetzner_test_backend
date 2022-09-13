@@ -1,10 +1,10 @@
 import express from "express";
-// import cors from "cors";
+import cors from "cors";
 
 const app = express();
 const port = 9384;
 
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 const employees = [
