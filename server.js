@@ -20,6 +20,10 @@ app.get("/", (req, res) => {
   res.json(employees);
 });
 
+app.get("/api", (req, res) => {
+  res.json(employees);
+});
+
 app.listen(port, () => {
   console.log(`listening on http://localhost:${port}`);
 });
